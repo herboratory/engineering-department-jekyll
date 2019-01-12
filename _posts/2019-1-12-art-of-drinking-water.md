@@ -3,7 +3,7 @@ layout: post
 title: "喝水的藝術"
 date: 2018-12-31
 excerpt: "講講那些似是而非的喝水論調"
-tags: [prevention, chinese-medicine]
+tags: [health-preservation, chinese-medicine]
 comments: true
 ---
 
