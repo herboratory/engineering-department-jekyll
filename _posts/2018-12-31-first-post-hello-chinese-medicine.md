@@ -4,6 +4,7 @@ title: "真 · 老點 · 不完全讀中醫指南"
 date: 2018-12-31
 excerpt: "寫給想不開想讀中醫的人"
 tags: [studying, chinese-medicine]
+feature: http://herboratory.github.io/assets/img/chinese-medicine-studying.jpg
 comments: true
 ---
 
