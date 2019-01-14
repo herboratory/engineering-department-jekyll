@@ -4,7 +4,7 @@ title: "炮。製。那話兒"
 date: 2019-1-14
 excerpt: "中醫的RPG武器改良技術"
 tags: [chinese-medicine, introduction, technique]
-feature: http://i.imgur.com/Ds6S7lJ.png
+feature: herboratory.github.io/assets/img/chinese-medicine-processing.jpg
 comments: true
 ---
 
