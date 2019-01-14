@@ -4,6 +4,7 @@ title: "修 · 醫道"
 date: 2018-1-12
 excerpt: "如何被煉成一個走歪的中醫"
 tags: [studying, chinese-medicine, poppy]
+feature::http://herboratory.github.io/assets/img/chinese-art.jpg
 comments: true
 ---
 
