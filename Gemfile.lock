@@ -59,7 +59,7 @@ GEM
     mercenary (0.3.6)
     minitest (5.8.5)
     multipart-post (2.0.0)
-    nokogiri (1.8.2)
+    nokogiri (>= 1.8.5)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
