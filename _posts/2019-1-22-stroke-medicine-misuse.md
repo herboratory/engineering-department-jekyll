@@ -4,7 +4,7 @@ title: "我不能開名批評的「安宮牛黃丸」"
 date: 2019-1-22
 excerpt: "其中一個害死中醫不負責任的擦邊球"
 tags: [herbs, formulae, chinese-medicine]
-feature: http://herboratory.github.io/assets/img/4005DFC4-4EE1-41B5-936B-C3AE343883FA.jpeg
+feature: http://herboratory.github.io/assets/img/46251AF1-7123-4045-8272-83B268EEA226.jpeg
 comments: true
 ---
 
