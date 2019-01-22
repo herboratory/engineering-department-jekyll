@@ -4,9 +4,20 @@ title: "我不能開名批評的「安宮牛黃丸」"
 date: 2019-1-22
 excerpt: "其中一個害死中醫不負責任的擦邊球"
 tags: [herbs, formulae, chinese-medicine]
-feature: [herboratory.github.io](https://github.com/herboratory/herboratory.github.io)/[assets](https://github.com/herboratory/herboratory.github.io/tree/master/assets)/[img](https://github.com/herboratory/herboratory.github.io/tree/master/assets/img)/4005DFC4-4EE1-41B5-936B-C3AE343883FA.jpeg
+feature: http://herboratory.github.io/assets/img/01DE78CE-4A5D-4FED-A815-0D9FC3C60079.jpeg
 comments: true
 ---
+
+
+---
+layout: post
+title: ""
+date: 2019-1-22
+excerpt: ""
+tags: []
+feature: [herboratory.github.io](https://github.com/herboratory/herboratory.github.io)/[assets](https://github.com/herboratory/herboratory.github.io/tree/master/assets)/[img](https://github.com/herboratory/herboratory.github.io/tree/master/assets/img)/4005DFC4-4EE1-41B5-936B-C3AE343883FA.jpeg
+comments: true
+--
 
 話說剛剛的週末回家當外婆的人肉快遞兼臨時人肉理療按摩器，順道買製作茶飲片的材料。感謝一位好友臨時頂替臨時人肉理療按摩器一職（還幫忙鑑定病灶！和制定可行方案），讓我在累得像、被外婆腰痛嚇得像的狀態下鬆了很大口氣。剛剛整理準備要寫的文章的題目，發現已經累積了十幾個題目...😨😰😱只好趁著做完第一炮茶飲片的空檔，快速的寫一篇。
 
