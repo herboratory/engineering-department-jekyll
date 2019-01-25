@@ -4,7 +4,7 @@ title: "誰在製造這場流感瘟疫的罪魁禍首？"
 date: 2019-1-25
 excerpt: "說我殘忍，但某些地方真心覺得變成疫區是活該且理所當然。"
 tags: [public-health, poppy]
-feature: http://http://herboratory.github.io/assets/img/mask.jpg
+feature: http://herboratory.github.io/assets/img/mask.jpg
 comments: true
 ---
 
