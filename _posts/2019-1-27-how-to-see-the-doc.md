@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "完全。看中醫指南 + 守則"
-date: 2019-1-14
+date: 2019-1-27
 excerpt: "「就是處女膜破了之後就開始血崩了...」患者的母親一邊離開一邊嘟噥著。"
 tags: [chinese-medicine, introduction, diagnosis, poppy]
 feature: http://herboratory.github.io/assets/img/acupuncture-2956847_1920.jpg
