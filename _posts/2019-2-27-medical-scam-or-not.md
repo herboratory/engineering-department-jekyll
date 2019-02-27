@@ -3,7 +3,7 @@ layout: post
 title: "神棍"
 date: 2019-2-27
 excerpt: "看病跟買股票其實差不多，都偏好往死裡找"
-tags: [prevention, chinese-medicine, poppy]
+tags: [health-preservation, chinese-medicine, poppy]
 feature: herboratory.github.io/assets/img/70466E97-F775-4C67-9CA0-55DCAD518292.jpeg
 comments: true
 ---
