@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "反智科學人"
-date: 2019-1-27
+date: 2019-3-4
 excerpt: "科學人 vs. 科學撚"
 tags: [chinese-medicine, poppy]
 feature: http://herboratory.github.io/assets/img/7E07A950-908E-41EA-B0B5-E5A6F97F93C5.jpeg
