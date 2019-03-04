@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "常見的奇難雜症"
-date: 2019-1-27
+date: 2019-2-9
 excerpt: "這是一個關於兩個鼻孔的故事"
 tags: [chinese-medicine, cases, diagnosis, poppy]
 feature: http://herboratory.github.io/assets/img/FBD52907-3952-42C0-888B-C9A3BC8324E3.jpeg
