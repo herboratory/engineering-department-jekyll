@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "中醫經典用途"
-date: 2017-6-10
+date: 2019-4-10
 excerpt: "適合想要看到傷風感冒程度的經典用途概說"
 tags: [studying, chinese-medicine]
 feature: http://herboratory.github.io/assets/img/AF592C18-5CBF-4C50-B5AC-866209F9E304.jpeg
