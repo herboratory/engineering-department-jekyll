@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "書籍介紹 - 《幼學瓊林》"
-date: 2019-4-10
+date: 2019-5-18
 excerpt: "學中醫的那些旁枝末夜的知識點"
 tags: [chinese-medicine, book]
 feature: http://herboratory.github.io/assets/img/2365FA72-0BD7-41DC-9B8A-6E66C1225B84.jpeg
