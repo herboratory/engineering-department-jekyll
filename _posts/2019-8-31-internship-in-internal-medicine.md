@@ -4,7 +4,7 @@ title: "實習手札 - 內一科"
 date: 2019-8-31
 excerpt: "從家屬到醫生的轉換"
 tags: [internship, chinese-medicine]
-feature: http://herboratory.github.io/assets/img/76BB8BE7-2278-4F8A-9B8D-D630AA6E3C20.jpeg
+feature: http://herboratory.github.io/assets/img/checklist-3222079_1920.jpg
 comments: true
 ---
 
