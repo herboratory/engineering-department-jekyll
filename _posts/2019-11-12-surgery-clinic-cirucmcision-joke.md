@@ -4,7 +4,7 @@ title: "外科門診笑話 - 割包皮"
 date: 2019-11-12
 excerpt: "新興職業 - 代病人割包皮"
 tags: [internship, jokes, chinese-medicine]
-feature: http://herboratory.github.io/assets/img/76BB8BE7-2278-4F8A-9B8D-D630AA6E3C20.jpeg
+feature: http://herboratory.github.io/assets/img/surgery-688380_1920.jpg
 comments: true
 ---
 
