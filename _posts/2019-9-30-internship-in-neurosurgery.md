@@ -4,7 +4,7 @@ title: "實習手札 - 神經外科"
 date: 2019-9-30
 excerpt: "沒用的養生神棍"
 tags: [internship, chinese-medicine]
-feature: http://herboratory.github.io/assets/img/76BB8BE7-2278-4F8A-9B8D-D630AA6E3C20.jpeg
+feature: http://herboratory.github.io/assets/img/hospital-1802680_1920.jpg
 comments: true
 ---
 
