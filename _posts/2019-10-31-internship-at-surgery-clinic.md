@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "實習手札 - 外科門診“
+title: "實習手札 - 外科門診"
 date: 2019-10-31
-excerpt: “修煉醫道的場所”
-tags: [internship, chinese-medicine]
+excerpt: "修煉醫道的場所"
+tags: [internship,chinese-medicine]
 feature: http://herboratory.github.io/assets/img/surgery-4607282_1920.jpg
 comments: true
 ---
