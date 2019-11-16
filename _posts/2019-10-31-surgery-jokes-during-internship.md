@@ -4,7 +4,7 @@ title: "外科門診笑話系列 - 跟診月輯錄"
 date: 2019-10-31
 excerpt: "跟診見聞實錄"
 tags: [internship, jokes, chinese-medicine]
-feature: http://herboratory.github.io/assets/img/76BB8BE7-2278-4F8A-9B8D-D630AA6E3C20.jpeg
+feature: http://herboratory.github.io/assets/img/surgery-1662204_1920.jpg
 comments: true
 ---
 
