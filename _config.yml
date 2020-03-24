@@ -4,7 +4,7 @@ bio:                'Chinese medicine, nathmology. 中醫，天人之學。'
 description:        "與很多傳統醫學一樣，中醫面對著所謂的科學化的洪流卻一路摸索自己的地位與方向。中醫不只是一個傳統醫學理論，更是中國文化的載體，與文史哲更是不能分離。只有跟中醫與傳統醫學有關，都是扶疏堂研究所的涉獵範圍。Chinese medicine is in very simliar situation of other traditional medicine, they are all facing the scientific wave and exploring the direction and possibliity. Chinese medicine is not only a traditional medicine theory, but also the carrier of Chinese culture, which can't be torn from literature, history and philosopy. Anything related to Chinese medicine and traditional medicine is the interest of Herboratory."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/chop_heart.jpg'
+logo:               'assets/img/logo_chop.png'
 background:         'assets/img/background.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             zh_HK
