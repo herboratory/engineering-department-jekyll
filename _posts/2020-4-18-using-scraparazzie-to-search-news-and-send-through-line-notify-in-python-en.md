@@ -8,7 +8,7 @@ feature: http://herboratory.github.io/assets/img/AF592C18-5CBF-4C50-B5AC-866209F
 comments: true
 ---
 
-When the idea came up to make the package [scraparazzie](https://herboratory.ai/portfolio/scraparazzie/), the main purpose is to grab news by topics and keywords. Since I don't really need the news content but title, source and publish date, so that I can receive news with further setting and send the results to an IM bot. That's why I made scraprazzie. And, yes, mainly for stock market and agriculture news (eh...target in commodities🤫) Somehow I found a [tutorial](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/) about application in LINE Notify, so let's do it!
+When the idea came up to make the package [scraparazzie](https://herboratory.github.io/engineering_department/scraparazzie-release/), the main purpose is to grab news by topics and keywords. Since I don't really need the news content but title, source and publish date, so that I can receive news with further setting and send the results to an IM bot. That's why I made scraprazzie. And, yes, mainly for stock market and agriculture news (eh...target in commodities🤫) Somehow I found a [tutorial](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/) about application in LINE Notify, so let's do it!
 
 **Environment: Python 3.7**
 
