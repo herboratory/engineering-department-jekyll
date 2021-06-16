@@ -4,7 +4,7 @@ bio:                'Chinese medicine, nathmology. 中醫，天人之學。'
 description:        "中醫不只是一個傳統醫學理論，更是中國文化的載體，與文史哲更是不能分離。只有跟中醫有關，都是Herboratory 扶疏堂研究所的涉獵範圍。"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo_jekyll.png'
+logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             zh_HK
