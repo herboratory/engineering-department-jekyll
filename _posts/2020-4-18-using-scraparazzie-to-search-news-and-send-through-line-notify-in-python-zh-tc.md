@@ -8,7 +8,7 @@ feature: http://herboratory.github.io/assets/img/AF592C18-5CBF-4C50-B5AC-866209F
 comments: true
 ---
 
-當初做[scraparazzie](https://herboratory.ai/portfolio/scraparazzie/)這個套件的目的，是希望可以抓自己有興趣的topic和keywords的新聞傳送到某個IM的bot，就能根據之後自己再設定隨時看到新聞，方便自己炒股和追蹤農業災害新聞（啊...因為想要炒commodity嘛🤫）。但我並不需要內文，只需要標題、新聞來源和發布時間就好，有興趣再click連結去看。偶然看到LINE Notify的[教學](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/)，就拿來實作一下吧。
+當初做[scraparazzie](https://herboratory.github.io/engineering_department/scraparazzie-release/)這個套件的目的，是希望可以抓自己有興趣的topic和keywords的新聞傳送到某個IM的bot，就能根據之後自己再設定隨時看到新聞，方便自己炒股和追蹤農業災害新聞（啊...因為想要炒commodity嘛🤫）。但我並不需要內文，只需要標題、新聞來源和發布時間就好，有興趣再click連結去看。偶然看到LINE Notify的[教學](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/)，就拿來實作一下吧。
 
 **開發環境：Python 3.7**
 
