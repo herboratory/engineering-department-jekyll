@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "如何在Telegram利用python-telegram-bot建立一個中醫經典古籍《素問》搜尋chatbot"
-date: 2017-6-10
+date: 2020-7-25
 excerpt: "利用python-telegram-bot建立chatbot教學"
 tags: [tutorial, python, telegram, chatbot]
 feature: http://herboratory.github.io/assets/img/76BB8BE7-2278-4F8A-9B8D-D630AA6E3C20.jpeg
