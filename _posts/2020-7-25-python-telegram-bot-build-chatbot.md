@@ -94,7 +94,7 @@ BotFather除了註冊chatbot，還能幫你的chatbot做設定，例如之後想
 
 這裡我們需要import用到的python-telegram-bot package
 
-```
+```python
 import time
 import json    #用來讀取搜尋資料檔
 import os
@@ -102,7 +102,8 @@ import os.path
 import logging    #顯示log
 import telegram    #運行telegram用
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters, CallbackContext, ConversationHandler 
-、、、
+```
+
 Updater是每個chatbot都會用到。如名字，對話會需要update，就是靠這個
 CommandHandler就是用來處理輸入command用的部分
 CallbackQueryHandler：在about用到inline keyboard時的按鈕指令部分就靠這個處理
@@ -110,7 +111,8 @@ MessageHandler：chatbot處理對話訊息的部分
 Filters：在reply_handler用到，設定若非設定command會回覆用戶不知道說啥的訊息時的部分，配合MessageHandler用
 CallbackContext：這個用來pass callback。這裡主要針對在error和error_handler時使用。但根據撞牆得知，這個版本v12會用到CallbackContext，但聽聞v13會改。所以就照樣先跟著用就好。
 ConversationHandler：如其名，就是處理對話的部分
-、、、
+
+```python
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 #InlineKeyboardMarkup, InlineKeyboardButton：建立inline keyboard必須用到的部分
 ```
@@ -119,7 +121,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 
 import完會用到的東西，就把顯示log的部分加進來。這部分基本上就是根據python-telegram-bot的用法照樣copy & paste過來就好。
 
-```
+```python
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 
@@ -132,7 +134,7 @@ logger = logging.getLogger(__name__)
 
 Telegram chatbot的基礎設定，包括chatbot的token - 也就是去找@BotFather挖蘿蔔坑獲得的一串。不記得的話就去@BotFather看看。
 
-```
+```python
 # 在基礎設定，要創造Updater，將token pass給Updater。
 # 注意的是，在v12中要加入“use_context = True”（之後版本不需要），用於有新訊息是回應。
 # 此外TOKEN、bot和updater要放在def外面。若只放在main()會出現錯誤
@@ -145,7 +147,7 @@ updater = Updater(TOKEN, use_context = True)
 
 在python-telegram-bot，指令都會一個def對應一個後面會在main寫的dispatcher。這裡的/start command，預設user輸入/start後會回覆跟user打招呼，還有提供基本的「救命」指令，例如/help、/about。
 
-```
+```python
 def start_handler(update, context: CallbackContext):
 
     # chatbot在接受用戶輸入/start後的output內容
@@ -165,7 +167,7 @@ update.message.reply\_text()是chatbot回復user的line，若想要分段顯示�
 
 預設寫的順序main會在很後面，但為啥現在就要寫呢？因為是要測試用。
 
-```
+```python
 def main():
     """啟動bot"""
     # 設定使用dispatcher，用來以後設定command和回覆用
@@ -206,7 +208,7 @@ if __name__ == '__main__':
 
 就在terminal的虛擬環境下輸入以下command：
 
-```
+```python
 python cynanchum_bot.py
 ```
 
@@ -224,7 +226,7 @@ python cynanchum_bot.py
 
 /about的部分，設計對話跟/start類似，code也是沿用/start的update.message.reply\_text()。這部分的重點在於如何設置inline keyboard。Inline keyboard的好處是限制用戶只能選擇提供的按鈕，而且用途廣泛，除了可以用在Telegram裡面，也能用在提供用戶連結。
 
-```
+```python
 def about_handler(update, context: CallbackContext):
 
     bot.send_chat_action(chat_id = update.message.chat_id, action = telegram.ChatAction.TYPING)
@@ -246,7 +248,7 @@ def about_handler(update, context: CallbackContext):
 
 Inline keyboard的格式如下：
 
-```
+```python
 reply_markup_1 = InlineKeyboardMarkup([[
         InlineKeyboardButton("在Telegram顯示的項目名稱1號", url = "按鈕按下去想要連結到的網址"),
         InlineKeyboardButton("在Telegram顯示的項目名稱2號", url = "按鈕按下去想要連結到的網址")],
@@ -266,7 +268,7 @@ reply_markup_1 = InlineKeyboardMarkup([[
 
 寫完/about的部分，不能立刻測試，因為inline keyboard還沒設定完成。剛剛說，/about的inline keyboard有個部分會在Telegram的dialogue顯示回應，這裡就是設定回應的部分。
 
-```
+```python
 def getClickButtonData(update, context):
     """
     透過上方的about function取得了callback_data="about_me"，針對取得的參數值去判斷說要回覆給使用者什麼訊息
@@ -302,7 +304,7 @@ def getClickButtonData(update, context):
 
 寫/help的部分，程式跟/start非常類似。這裡注意的點就是設計對話方面，給user的指示要清晰簡單，不要拐彎抹角。
 
-```
+```python
 def help_handler(update, context: CallbackContext):
 
     # chatbot在接受用戶輸入/start後的output內容
@@ -325,7 +327,7 @@ def help_handler(update, context: CallbackContext):
 
 有個地方要注意，在Telegram，一個訊息是有字數限制，不能超過4096個字。所以在下面程式，結果顯示超過10項會分開message顯示。當然不代表顯示10筆就沒事，而是這是我的資料經過測試後比較理想的顯示方式。因此若打算顯示長篇大論的話就要注意字數限制。
 
-```
+```python
 def suwen_handler(update, context: CallbackContext):
     if len(update.message.text) <= 7:  # 如果單純輸入 /suwen 會跟你說叫你該如何輸入，以及因為/suwen 的字元數量一定會小於7
         update.message.reply_text("你輸入方式有錯誤。\n請輸入：/suwen 搜尋關鍵字 \n 例如: /suwen 伏梁")
@@ -377,7 +379,7 @@ chatbot寫到這裡，主要功能部分就算是完成了。接下來要採取�
 
 預防措施可以分成兩個部分，一個是接下來要做的reply\_handler，一個是這個之後的error\_handler和error的部分。reply\_handler基本上最大預防被user玩壞的關卡 - 因為預設只要user不是輸入正確的command，不管是否故意，反正就直接會顯示類似「挖垮薄」的訊息提醒user。因此邏輯很簡單，只要不是以上的command，就跑這一部分。
 
-```
+```python
 def reply_handler(update, context: CallbackContext):
     """Reply message."""
     text = update.message.text
@@ -397,7 +399,7 @@ error\_handler和error的部分，最大的目的是防止不可預知的down機
 
 error\_handler()的部分很簡單，就是有error時有個feedback給user。在function的括號要加入bot和error，才會知道是針對error而設。
 
-```
+```python
 def error_handler(bot, update, error, context: CallbackContext):
     bot.send_chat_action(chat_id = update.message.chat_id, action = telegram.ChatAction.TYPING)
     time.sleep(1)
@@ -406,7 +408,7 @@ def error_handler(bot, update, error, context: CallbackContext):
 
 error()部分，就是在console顯示log而已。這部分針對尤其是早期掛本機時公開測試時，若中間有啥error時可以滾回去log看error是啥。若是已經deploy在雲端的話作用不大。當然可以修改下面的code另外儲存log，那就可以隨時可以翻看。
 
-```
+```python
 def error(update, context):
     """紀錄Updates時出現的errors。出現error時console就會print出下面logger.warning的內容"""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
@@ -416,7 +418,7 @@ def error(update, context):
 
 整個chatbot寫完後，程式碼如下：
 
-```
+```python
 import time
 import json
 import os
