@@ -43,7 +43,7 @@ LINE Notify設定的部分大概到這裡結束。
 - 建立 lineNotifyMessage.py 檔案
 - 在token部分，記得將剛剛在LINE Notify記下的權杖貼上去
 
-```
+```python
 from scraparazzie import scraparazzie
 import requests
 import time
@@ -93,7 +93,7 @@ searching_topic(locations, keywords, chooen_language)
 
 - 測試執行如下：
 
-```
+```python
 python lineNotifyMessage.py
 ```
 
