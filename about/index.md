@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About 扶疏堂研究所｜Herboratory 工程部｜Engineering Department
+title: About 扶疏堂研究所｜Herboratory - 工程部｜Engineering Department
 tags: [about, herboratory, chinese-medicine, lab]
 date: 2018-12-31
 comments: false
 ---
     
-<center><a href="http://herboratory.github.io/engineering_department"><b>扶疏堂研究所｜Herboratory 工程部｜Engineering Department</b></a>, the virtual playground of Chinese medicine philosophy.</center>
+<center><a href="http://herboratory.github.io/engineering_department"><b>扶疏堂研究所｜Herboratory - 工程部｜Engineering Department</b></a>, the virtual playground of Chinese medicine philosophy.</center>
 
 ## The Story
 * 那些年，好不容易完成口試，終於離開某個比地獄還坑的研究所，defense結束後跟拯救我的前任老闆吃最後一次飯。經歷如遊魂般日子，我是一肚子氣，一方面也希望如Severus Snape那樣，所以我就跟老闆說，我要成立自己的實驗室。出奇的，前任老闆竟然鼓勵我這樣做。所以就這樣很草率的就開始漫長實驗室成立之旅。
