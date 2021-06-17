@@ -36,7 +36,7 @@ pip install --upgrade pip
 在Rasa NLU模塊中，提供了一種名為Pipline(管道)配置方式，傳入的消息(Message)通過管道(Pipline)中一系列組件(Component)處理後得到最終的模型。
 
 ![](https://rasa.com/docs/rasa/ideal-img/component-lifecycle-img.0111328.1202.png)
-<center>上圖參考自[這裏](https://rasa.com/docs/rasa/tuning-your-model)。</center><br>
+<p align="center">上圖參考自Rasa: https://rasa.com/docs/rasa/tuning-your-model</p><br>
 
 管道由多個組件構成，每個組件有各自的功能，比如實體提取、意圖分類、響應選擇、預處理等，這些組件在管道中一個接著一個的執行，每個組件處理輸入並創建輸出，並且輸出可以被該組件之後管道中任何組件使用。當然，有些組件只生成管道中其他組件使用的信息，有些組件生成Output屬性，這些Output屬性將在處理完成後返回。因此選擇components要根據目標需求而定。[這裡](https://jiangdg.blog.csdn.net/article/details/104530994)或[這裏](https://zhuanlan.zhihu.com/p/83566179)有一些components的介紹可以參考。
 
