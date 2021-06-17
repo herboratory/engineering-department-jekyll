@@ -8,7 +8,7 @@ feature: https://raw.githubusercontent.com/herboratory/engineering-department/ma
 comments: true
 ---
 
-When the idea came up to make the package [scraparazzie](https://herboratory.github.io/engineering_department/scraparazzie-release/), the main purpose is to grab news by topics and keywords. Since I don't really need the news content but title, source and publish date, so that I can receive news with further setting and send the results to an IM bot. That's why I made scraprazzie. And, yes, mainly for stock market and agriculture news (eh...target in commodities🤫) Somehow I found a [tutorial](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/) about application in LINE Notify, so let's do it!
+When the idea came up to make the package [scraparazzie](https://herboratory.github.io/engineering-department/scraparazzie-release/), the main purpose is to grab news by topics and keywords. Since I don't really need the news content but title, source and publish date, so that I can receive news with further setting and send the results to an IM bot. That's why I made scraprazzie. And, yes, mainly for stock market and agriculture news (eh...target in commodities🤫) Somehow I found a [tutorial](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/) about application in LINE Notify, so let's do it!
 
 **Environment: Python 3.7**
 
@@ -19,22 +19,22 @@ We also need to get the token of LINE Notify, so we need a LINE account and app.
 - head to [https://notify-bot.line.me/](https://notify-bot.line.me/) and login
 - Click the arrow next to you name at top right > My page
 
-![](assets/img/Screenshot-2020-04-18-at-11.08.42-1024x597.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.08.42-1024x597.png)
 
-![](assets/img/Screenshot-2020-04-18-at-11.10.52-1-1024x590.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.10.52-1-1024x590.png)
 
 - Click 【Generate token】
 
-![](assets/img/Screenshot-2020-04-18-at-11.11.40-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.11.40-1024x593.png)
 
 - Input your token name, this will show at as your notification title.
 - Select the first one【1-on-1 chat with LINE Notify】, then click 【Generate token】.
 
-![](assets/img/Screenshot-2020-04-18-at-11.14.03-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.14.03-1024x593.png)
 
 After clicking 【Generate token】, the token will show. **Please copy and keep the token**! The program need to use this token to communicate with LINE Notify!
 
-![](assets/img/Screenshot-2020-04-18-at-11.15.33-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.15.33-1024x593.png)
 
 Setting of LINE Notify is done here.
 
@@ -101,11 +101,11 @@ python lineNotifyMessage.py
 
 - Then you can receive news at LINE Notify.
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.05.08-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.05.08-576x1024.jpeg)
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.04.36-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.04.36-576x1024.jpeg)
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.04.37-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.04.37-576x1024.jpeg)
 
 This programe only get the news and send to LINE Notify. If you want to set the program runs with schedule, or run on cloud, just Google and look for the setup.
 
