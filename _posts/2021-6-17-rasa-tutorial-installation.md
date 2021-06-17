@@ -33,7 +33,14 @@ pip install --upgrade pip
 ```
 
 ### Before Installing:
-在Rasa NLU模塊中，提供了一種名為Pipline(管道)配置方式，傳入的消息(Message)通過管道(Pipline)中一系列組件(Component)處理後得到最終的模型。管道由多個組件構成，每個組件有各自的功能，比如實體提取、意圖分類、響應選擇、預處理等，這些組件在管道中一個接著一個的執行，每個組件處理輸入並創建輸出，並且輸出可以被該組件之後管道中任何組件使用。當然，有些組件只生成管道中其他組件使用的信息，有些組件生成Output屬性，這些Output屬性將在處理完成後返回。因此選擇components要根據目標需求而定。[這裡](https://jiangdg.blog.csdn.net/article/details/104530994)或[這裏](https://zhuanlan.zhihu.com/p/83566179)有一些components的介紹可以參考。這些components裡面，其中一個比較重要的是詞向量源、model和分詞。Rasa常用的詞向量源與model有MITIE和spaCy，基本上大部分的tutorial都會走著兩個路線。以中文來說，找到的tutorial都是以MITIE+jieba為主，這是由於spaCy當時不支援中文。spaCy去年開始支援中文，因此可以多一個選項。
+在Rasa NLU模塊中，提供了一種名為Pipline(管道)配置方式，傳入的消息(Message)通過管道(Pipline)中一系列組件(Component)處理後得到最終的模型。
+
+![](https://rasa.com/docs/rasa/ideal-img/component-lifecycle-img.0111328.1202.png)
+上圖參考自[這裏](https://rasa.com/docs/rasa/tuning-your-model)。<br>
+
+管道由多個組件構成，每個組件有各自的功能，比如實體提取、意圖分類、響應選擇、預處理等，這些組件在管道中一個接著一個的執行，每個組件處理輸入並創建輸出，並且輸出可以被該組件之後管道中任何組件使用。當然，有些組件只生成管道中其他組件使用的信息，有些組件生成Output屬性，這些Output屬性將在處理完成後返回。因此選擇components要根據目標需求而定。[這裡](https://jiangdg.blog.csdn.net/article/details/104530994)或[這裏](https://zhuanlan.zhihu.com/p/83566179)有一些components的介紹可以參考。
+
+這些components裡面，其中一個比較重要的是詞向量源、model和分詞。Rasa常用的詞向量源與model有MITIE和spaCy，基本上大部分的tutorial都會走著兩個路線。以中文來說，找到的tutorial都是以MITIE+jieba為主，這是由於spaCy當時不支援中文。spaCy去年開始支援中文，因此可以多一個選項。
 至於兩者有什麼差別，簡單來說，如[《ChatBots vs Reality: how to build an efficient chatbot, with wise usage of NLP》](https://towardsdatascience.com/chatbots-vs-reality-how-to-build-an-efficient-chatbot-with-wise-usage-of-nlp-77f41949bf08)說，「Mitie and Spacy are very different libraries from each other: the first oneuses more general-purpose language models, and therefore very slow to train, while Spacy uses more task specific models, and is very fast to train.」。更仔細的話，可以參考以下文章：<br>
 RASA NLU语言模型：[https://zhuanlan.zhihu.com/p/331853394](https://zhuanlan.zhihu.com/p/331853394)<br>
 Build a Multilingual Chatbot with Rasa and Heroku – Introduction：[https://www.langnerd.com/multilingual-chatbot-with-rasa-and-heroku-part-1/](https://www.langnerd.com/multilingual-chatbot-with-rasa-and-heroku-part-1/)
