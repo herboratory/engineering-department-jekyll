@@ -11,9 +11,9 @@ comments: true
 
 開始講安裝前，快速飄過介紹下Rasa唄。
 
-Rasa是一個open source的machine learning框架，用於構建上下文AI assistant和chatbot。Rasa有兩個主要模塊：
-NLU：實現意圖識別和槽值提取，它把用戶的輸入轉換為結構化數據；
-Core：是一個對話管理平台，用於預測、決定下一步做什麼；
+Rasa是一個open source的machine learning框架，用於構建上下文AI assistant和chatbot。Rasa有兩個主要模塊：<br>
+NLU：實現意圖識別和槽值提取，它把用戶的輸入轉換為結構化數據<br>
+Core：是一個對話管理平台，用於預測、決定下一步做什麼
 
 還有一個是Rasa X。Rasa X是一個可幫助構建、改進和部署由Rasa框架提供支持的AI assistants的工具。
 
