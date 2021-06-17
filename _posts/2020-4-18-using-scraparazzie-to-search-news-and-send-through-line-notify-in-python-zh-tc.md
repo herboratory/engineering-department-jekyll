@@ -8,7 +8,7 @@ feature: https://raw.githubusercontent.com/herboratory/engineering-department/ma
 comments: true
 ---
 
-當初做[scraparazzie](https://herboratory.github.io/engineering_department/scraparazzie-release/)這個套件的目的，是希望可以抓自己有興趣的topic和keywords的新聞傳送到某個IM的bot，就能根據之後自己再設定隨時看到新聞，方便自己炒股和追蹤農業災害新聞（啊...因為想要炒commodity嘛🤫）。但我並不需要內文，只需要標題、新聞來源和發布時間就好，有興趣再click連結去看。偶然看到LINE Notify的[教學](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/)，就拿來實作一下吧。
+當初做[scraparazzie](https://herboratory.github.io/engineering-department/scraparazzie-release/)這個套件的目的，是希望可以抓自己有興趣的topic和keywords的新聞傳送到某個IM的bot，就能根據之後自己再設定隨時看到新聞，方便自己炒股和追蹤農業災害新聞（啊...因為想要炒commodity嘛🤫）。但我並不需要內文，只需要標題、新聞來源和發布時間就好，有興趣再click連結去看。偶然看到LINE Notify的[教學](https://bustlec.github.io/note/2018/07/10/line-notify-using-python/)，就拿來實作一下吧。
 
 **開發環境：Python 3.7**
 
@@ -19,22 +19,22 @@ comments: true
 - 至 [https://notify-bot.line.me/zh\_TW/](https://notify-bot.line.me/zh_TW/) 進行登入
 - 點選右上方 帳號名稱選單中的「個人頁面」（My page）
 
-![](assets/img/Screenshot-2020-04-18-at-11.08.42-1024x597.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.08.42-1024x597.png)
 
-![](assets/img/Screenshot-2020-04-18-at-11.10.52-1-1024x590.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.10.52-1-1024x590.png)
 
 - 點選【發行權杖】（Generate token）
 
-![](assets/img/Screenshot-2020-04-18-at-11.11.40-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.11.40-1024x593.png)
 
 - 輸入自訂「權杖名稱」, 這邊設定的名稱會在出現在提醒訊息的Title
 - 選擇第一個【透過1對1聊天接受LINE Notify的通知】（1-on-1 chat with LINE Notify） ，然後按下「發行」（Generate token）
 
-![](assets/img/Screenshot-2020-04-18-at-11.14.03-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.14.03-1024x593.png)
 
 按下「發行」後，就會顯示權杖。**請將權杖內容「複製」並記下來**！程式與LINE Notify溝通就是靠這個權杖！
 
-![](assets/img/Screenshot-2020-04-18-at-11.15.33-1024x593.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-04-18-at-11.15.33-1024x593.png)
 
 LINE Notify設定的部分大概到這裡結束。
 
@@ -99,11 +99,11 @@ python lineNotifyMessage.py
 
 - 然後就能收到在LINE Notify傳送來的新聞
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.05.08-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.05.08-576x1024.jpeg)
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.04.36-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.04.36-576x1024.jpeg)
 
-![](assets/img/WhatsApp-Image-2020-04-18-at-17.04.37-576x1024.jpeg)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/WhatsApp-Image-2020-04-18-at-17.04.37-576x1024.jpeg)
 
 這個程式只是跑新聞出來而已。若想要變成定時，或者放在雲端跑的話，可以尋找相關的文章設定。
 
