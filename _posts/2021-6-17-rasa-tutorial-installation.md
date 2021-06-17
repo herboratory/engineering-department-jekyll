@@ -20,13 +20,17 @@ Core：是一個對話管理平台，用於預測、決定下一步做什麼
 ## 【安裝流程】
 
 ### Environment:
-建議Python 3.6 - 3.8之間，不support 3.9，尤其打算使用rasa X。我的OS環境時MacOS Big Sur 11.0.1。
+建議Python 3.6 - 3.8之間，不support 3.9，尤其打算使用Rasa X。安裝時我用Python 3.7，OS環境是MacOS Big Sur 11.0.1。
 
 ### Virtual Environment Setting:
+```python
 python3 -m venv whatever-name
+```
 
 ### Upgrade Package:
+```python
 pip install --upgrade pip
+```
 
 ### Before Installing:
 在Rasa NLU模塊中，提供了一種名為Pipline(管道)配置方式，傳入的消息(Message)通過管道(Pipline)中一系列組件(Component)處理後得到最終的模型。管道由多個組件構成，每個組件有各自的功能，比如實體提取、意圖分類、響應選擇、預處理等，這些組件在管道中一個接著一個的執行，每個組件處理輸入並創建輸出，並且輸出可以被該組件之後管道中任何組件使用。當然，有些組件只生成管道中其他組件使用的信息，有些組件生成Output屬性，這些Output屬性將在處理完成後返回。因此選擇components要根據目標需求而定。[這裡](https://jiangdg.blog.csdn.net/article/details/104530994)或[這裏](https://zhuanlan.zhihu.com/p/83566179)有一些components的介紹可以參考。這些components裡面，其中一個比較重要的是詞向量源、model和分詞。Rasa常用的詞向量源與model有MITIE和spaCy，基本上大部分的tutorial都會走著兩個路線。以中文來說，找到的tutorial都是以MITIE+jieba為主，這是由於spaCy當時不支援中文。spaCy去年開始支援中文，因此可以多一個選項。
@@ -43,24 +47,34 @@ Rasa简介：[https://zhuanlan.zhihu.com/p/342671832](https://zhuanlan.zhihu.com
 
 #### 若用MITIE+jieba安裝如下：
 安裝rasa：
+```python
 pip install git+https://github.com/mit-nlp/MITIE.git
 pip install rasa[mitie]
+```
 
 安装結巴分詞：
+```python
 pip install jieba
+```
 
 另外還要準備好中文詞向量模型total_word_feature_extractor_zh.dat（密碼：p4vx）[https://pan.baidu.com/s/1kNENvlHLYWZIddmtWJ7Pdg](https://pan.baidu.com/s/1kNENvlHLYWZIddmtWJ7Pdg)，這裡需要將該模型copy到創建的python項目data目錄下（可任意位置），後面訓練NLU模型時會用到。
 
 #### 若用spaCy安裝如下：
+```python
 pip install https://github.com/howl-anderson/Chinese_models_for_SpaCy/releases/download/v2.0.3/zh_core_web_sm-2.0.3.tar.gz
 ./spacy_model_link.bash
 pip install rasa[spacy]
+```
 
 #### 或者全部安裝：
+```python
 pip install rasa[full]
+```
 
 #### 安裝rasa X：
+```python
 pip install --use-deprecated=legacy-resolver rasa-x --extra-index-url https://pypi.rasa.com/simple
 https://rasa.com/docs/rasa-x/installation-and-setup/install/local-mode
+```
 
 到這裡總算安裝成功。接下來就要啟動和setting。雖然有想寫成個系列教學文，不過實在沒啥力氣，所以還是別期望太高了。
