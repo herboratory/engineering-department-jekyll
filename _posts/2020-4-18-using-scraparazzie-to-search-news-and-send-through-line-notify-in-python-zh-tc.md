@@ -4,7 +4,7 @@ title: "在Python使用scraparazzie尋找新聞並透過LINE Notify發送"
 date: 2020-4-18
 excerpt: "scraparazzie教學"
 tags: [tutorial, python, google-news-feed, scraparazzie]
-feature: http://herboratory.github.io/assets/img/AF592C18-5CBF-4C50-B5AC-866209F9E304.jpeg
+feature: https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/AF592C18-5CBF-4C50-B5AC-866209F9E304.jpeg
 comments: true
 ---
 
