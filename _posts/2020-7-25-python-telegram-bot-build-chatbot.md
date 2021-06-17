@@ -216,7 +216,7 @@ python cynanchum_bot.py
 
 輸入/start後，就會出現以下結果：
 
-![](assets/img/Screenshot-2020-07-25-at-16.13.58-1024x429.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-16.13.58-1024x429.png)
 
 就這樣，第一個command成功可用了！🤤🤪❤️
 
@@ -292,11 +292,11 @@ def getClickButtonData(update, context):
 
 去虛擬環境再跑python 檔案，然後在Telegram輸入/about，會顯示這個樣子：
 
-![](assets/img/Screenshot-2020-07-25-at-16.57.12-971x1024.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-16.57.12-971x1024.png)
 
 按下「關於徐長卿君🤖️ About Cynanchum kun🤖️」，若getClickButtonData設定正確，會顯示一下畫面：
 
-![](assets/img/Screenshot-2020-07-25-at-16.59.16-1024x722.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-16.59.16-1024x722.png)
 
 如是者，/about的部分就做好了！😆😆😆
 
@@ -315,7 +315,7 @@ def help_handler(update, context: CallbackContext):
 
 同樣的，寫完去main()把help對應的help\_handler的dispatcher的#去掉，再把程式跑起來後去Telegram測試，成功的話就會出現以下畫面：
 
-![](assets/img/Screenshot-2020-07-25-at-17.06.29-1024x415.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-17.06.29-1024x415.png)
 
 就這樣，/help command的部分就大功告成！🤪🤪🤪
 
@@ -369,7 +369,7 @@ def suwen_handler(update, context: CallbackContext):
 
 若搜尋部分沒問題，輸入/suwen 伏梁會出現以下結果：
 
-![](assets/img/Screenshot-2020-07-25-at-17.24.53-1024x985.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-17.24.53-1024x985.png)
 
 若能正確顯示搜尋結果，就代表/suwen command的部分大功告成！🙃
 
@@ -391,7 +391,7 @@ def reply_handler(update, context: CallbackContext):
 
 若一切正確，測試時亂打一通，就會顯示以下結果：
 
-![](assets/img/Screenshot-2020-07-25-at-17.38.13-1024x361.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-17.38.13-1024x361.png)
 
 #### 【寫ing - error\_handler & error】
 
@@ -582,29 +582,29 @@ if __name__ == '__main__':
 
 這裡假設已經有GCP帳戶。沒有的話，先弄個GCP的帳戶，新用戶可以有12個月或300鎂額度，詳細可看[這裡](https://cloud.google.com/free/docs/gcp-free-tier?hl=zh-TW)介紹。有GCP帳戶後，登陸到GCP，然後開個新project。輸入project name，然後按CREATE。然後等GCP運作一下，把東西搭建好。就去開虛擬機器。
 
-![](assets/img/Screenshot-2020-07-25-at-18.20.29-1024x666.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-18.20.29-1024x666.png)
 
 然後進入project，按下左上角三條線，就會出現menu如下。在Compute Machine選VM instances。等一切setting完成後，
 
-![](assets/img/Screenshot-2020-07-25-at-18.28.24-646x1024.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-18.28.24-646x1024.png)
 
 等settle down後，在VM instances按Create。
 
-![](assets/img/Screenshot-2020-07-25-at-18.32.29-1024x539.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-18.32.29-1024x539.png)
 
 進去後，會設定虛擬機器的配備。在這裡可以幫機器命名。Region的話一般選擇asia-east1 (Taiwan)，Zone選擇asia-east1-b。現在用香港的話還是謝謝不送了。不過之前無論是在GCP setup網站還是安置算盤子君🤖️，都是選Taiwan。Machine configuration的話，由於不期望流量很大，所以Series選第一代的N1就好，machine type就選個就算有點流量也沒啥大問題的g1-small (1 vPCU, 1.7 GB memory)。若只是玩玩而已，可以選更小的mirco。
 
-![](assets/img/Screenshot-2020-07-25-at-19.57.55-868x1024.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-19.57.55-868x1024.png)
 
 Boot disk的話改成Debian 10，Identity and API access不需要更動。Firewall勾選Allow HTTP traffic和Allow HTTPS traffic。然後按Create。
 
-![](assets/img/Screenshot-2020-07-25-at-19.59.44-773x1024.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-19.59.44-773x1024.png)
 
 等機器設定好之後，就會進入以下畫面。機器會配備個Internal IP和External IP（這裡我遮蔽了）。接下來就是利用SSH把該upload的東西給upload上去。
 
 在Connect下面有個SSH，按下隔壁的箭頭，會有幾個選項，就選第一個「Open in browser window」。之後會有個popup window跳出來，沒有的話看看browser有沒有阻擋popup設定。
 
-![](assets/img/Screenshot-2020-07-25-at-18.42.03-1024x540.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-18.42.03-1024x540.png)
 
 進去之後，首先建立個folder，我就命名cynanchum\_bot，這個folder之後就是儲存chatbot的地方。command如下：
 
@@ -676,7 +676,7 @@ python3 -m venv environment
 
 接下來就是把上傳的東西上傳。我懶得設啥，東西也不多，就每個拉上去就算了。在右上角會看到一個⚙️ icon，按下去，就會有個menu。選Upload file。就可以把檔案upload上去。
 
-![](assets/img/Screenshot-2020-07-25-at-19.11.12.png)
+![](https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/Screenshot-2020-07-25-at-19.11.12.png)
 
 然後輸入“cd”按Enter，輸入”ls”確定cynanchum\_bot.py成功upload。然後利用以下command把主程式搬到folder裡：
 
