@@ -4,7 +4,7 @@ title: "Rasa搗鼓筆記 - 安裝"
 date: 2021-6-17
 excerpt: "Rasa安裝教學與詞量源雜七雜八的選取的心得"
 tags: [tutorial, python, rasa, chatbot]
-feature: http://herboratory.github.io/assets/img/FBD52907-3952-42C0-888B-C9A3BC8324E3.jpeg
+feature: https://raw.githubusercontent.com/herboratory/engineering-department/master/assets/img/FBD52907-3952-42C0-888B-C9A3BC8324E3.jpeg
 comments: true
 ---
 好幾年前...大概是前年吧，想要做智能一點的chatbot，用過chatterbot效果不算好；想要用Rasa，大概太老了連安裝都安裝不了，搞了好幾天最後放棄了。由於最近還是皮癢加上個人健康需求還是想要做個比較聰明點的chatbot，最後還是忍不住想要再搗鼓Rasa。因此就試看看唄。經過一天收集閱讀消化資料，找了一堆tutorials，以中文為語言的的基本上內容離不開哪些，看完還是覺得知識和操作很零碎，也不想只是純粹跟tutorial去做，因此稍微找了些資料才去試著安裝，這次終於成功了。下面的步驟是經過測試OK的。
