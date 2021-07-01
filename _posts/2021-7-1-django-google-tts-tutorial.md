@@ -144,7 +144,8 @@ python manage.py migrate
 ## 【將HTML頁面與django連結】
 首先需要有個index.html。
 如前述，用戶輸入的資料有兩個項目：欲轉換的文字和語言，因此頁面也是有對應的輸入欄：
-```html
+
+```
 <html>
     <head>
       <title>Text-to-Speech Converter｜文字-語音轉換器</title>
